@@ -1,0 +1,190 @@
+create database QuizApplication;
+
+use QuizApplication;
+
+create table admin_login(aid int primary key auto_increment,
+admin_username varchar(20),
+admin_password varchar(20));
+
+insert into admin_login (admin_username,admin_password)
+values("lakshmi","lakshmi");
+
+insert into admin_login (admin_username,admin_password)
+values("satya","satya");
+
+insert into admin_login (admin_username,admin_password)
+values("janardhana","janardhana");
+
+create table player_login(
+pid int primary key auto_increment,
+Firstname varchar(25),
+Lastname varchar(25),
+age int,
+Occupation varchar(20),
+p_username varchar(20),
+p_password varchar(20));
+
+insert into player_login(Firstname,Lastname,age,Occupation,p_username,p_password)
+values("Narayanalakshmi","Madala",29,"HomeMaker","lakshmi","lakshmi");
+
+insert into player_login(Firstname,Lastname,age,Occupation,p_username,p_password)
+values("Satyanarayana","Madala",18,"Student","satya","satya");
+
+
+create table computer_basics (
+qid int primary key auto_increment,
+qname varchar(100),
+opt1 varchar(50),
+opt2 varchar(50),
+opt3 varchar(50),
+opt4 varchar(50),
+cans int);
+
+insert into computer_basics(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Who is the Father Of Computer ?",
+"Alan Turing",
+"Charles Babbage",
+"Steve Wozniak",
+"Ada Lovelace",
+2);
+
+insert into computer_basics(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Who invented The Internet ?",
+"Tim Berners-Lee",
+"Vinton Cerf",
+"Linus Torvalds",
+"James Gosling",
+2);
+
+insert into computer_basics(qname,opt1,opt2,opt3,opt4,cans)
+values(
+" Java Invented By ?",
+"Tim Berners-Lee",
+"Vinton Cerf",
+"Linus Torvalds",
+"James Gosling",
+4);
+
+
+
+
+
+create table core_java (
+qid int primary key auto_increment,
+qname varchar(100),
+opt1 varchar(50),
+opt2 varchar(50),
+opt3 varchar(50),
+opt4 varchar(50),
+cans int);
+
+insert into core_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Which keyword is used to implement multiple inheritance in Java?",
+"multiple",
+"extends",
+"implements",
+"inherits",
+3);
+
+insert into core_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"What is the purpose of the super keyword in Java?",
+"It refers to the superclass of a class",
+"It creates an instance of a subclass",
+"It is used to call a private method",
+" It is used for type casting",
+1);
+
+insert into core_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"What is the default value of a local variable in Java?",
+"0",
+"null",
+"Depends On the data type",
+"It doesn't have a default value",
+4);
+
+create table advanced_java (
+qid int primary key auto_increment,
+qname varchar(100),
+opt1 varchar(50),
+opt2 varchar(50),
+opt3 varchar(50),
+opt4 varchar(50),
+cans int);
+
+insert into advanced_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Among the following which contains date information.",
+"java.sql.timestamp",
+"java.io.time",
+"java.io.timestamp",
+"java.sql.time",
+1);
+
+insert into advanced_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Identify the method of the JDBC process among the following options.",
+"remove()",
+"deletebatch()",
+"setbatch()",
+"addbatch()",
+4);
+
+insert into advanced_java(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"TCP, FTP, SMTP, Telnet are examples of?",
+"IP address",
+"Protocol",
+"Socket",
+"MAC Address",
+2);
+
+create table springboot (
+qid int primary key auto_increment,
+qname varchar(100),
+opt1 varchar(50),
+opt2 varchar(50),
+opt3 varchar(50),
+opt4 varchar(50),
+cans int);
+
+insert into springboot(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"What is Spring Boot primarily used for ?",
+"Mobile Application Development",
+"Web Application Development",
+"Machine Learning",
+"Game Development",
+2);
+
+insert into springboot(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Which embedded web server is commonly used with Spring Boot?",
+"Tomcat",
+"Apache HTTP Server",
+"Nginx",
+"Jetty",
+1);
+
+insert into springboot(qname,opt1,opt2,opt3,opt4,cans)
+values(
+"Which annotation is used to create a RESTful web service endpoint in a Spring Boot application?",
+"@RestController",
+"@Service",
+"@Componenet",
+"@Controller",
+1);
+
+
+create table microservices (
+qid int primary key auto_increment,
+qname varchar(100),
+opt1 varchar(50),
+opt2 varchar(50),
+opt3 varchar(50),
+opt4 varchar(50),
+cans int);
